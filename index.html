@@ -3,11 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fahrtenbuch</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form action="">
-        test
-    </form>
+    <div class="contheader">
+        <h1>Fahrtenbuch - Project </h1>
+    </div>
+    <div class="container">
+        <form action="antwort.php" method="post">
+    
+            <!--<h3>Personal Information</h3> -->
+        <fieldset>
+            <legend >Personal Information</legend>
+
+            <table class="two-section">
+                <tr>
+                    <td><label for="name"> Name</label></td>
+                    <td><input type="text" name="name" id="name" size="" required></td>
+                </tr>
+                <tr>
+                    <td><label for="wohnort">Wohnort</label></td>
+                    <td><input type="text" name="wohnort" id="wohnort" size="35" required></td>
+                </tr>
+                <tr>
+                    <td><label for="zweck">Zweck </label></td>
+                    <td><input type="text" name="zweck" id="zweck" size="35" placeholder="Enter purpose" required></td>
+                </tr>
+            
+            </table>
+
+            <div class="row">
+            <table class="two-section">
+                <tr>
+                    <td><label for="datum">Datum </label></td>
+                    <td><input type="date" name="datum" id="datum" size="35" required></td>
+                </tr>
+                <tr>
+                    <td> <label for="uhrzeit-von">Uhrzeit von</label></td>
+                    <td> <input type="time" name="uhrzeit-von" id="uhrzeit-von"></td>
+                </tr>
+                <tr>
+                    <td> <label for="uhrzeit-bis">Uhrzeit bis</label></td>
+                    <td><input type="time" name="uhrzeit-bis" id="uhrzeit-bis"> </td>
+                </tr>
+            </table>
+        
+            
+                    <table class="two-section">
+                        <tr>
+                            <td><label for="km-start">Km Start</label></td>
+                            <td><input type="number" name="km-start" id="km-start"></td>
+                            
+                        </tr>
+                        <tr>
+                            <td><label for="km-end">Km End</label></td>
+                            <td> <input type="number" name="km-end" id="km-end"></td>
+                            
+                        </tr>
+                        <tr>
+                            <td><label for="kmdiff">Km Diff</label></td>
+                            <td><input type="text" name="kmdiff" id="kmdiff" size="35" readonly></td>
+                        </tr>
+                    </table>
+            
+                </div>     
+            
+
+                <div class="btn-submit">
+                    <button type="submit"> Abgeben</button>
+                </div>
+                <div class="btn-reset">
+                    <button type="reset"> reset</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
 </body>
 </html>
