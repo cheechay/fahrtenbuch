@@ -6,12 +6,33 @@
     <title>Fahrtenbuch</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
+
+<script>
+    function calculatekmdiff() {
+        const kmStart = parseFloat(document.getElementById('km_start').value) || 0;
+        const kmEnd = parseFloat(document.getElementById('km_end').value) || 0;
+
+        const kmDiff = kmEnd >= kmStart ? kmEnd - kmStart : "0";
+        document.getElementById('kmdiff').value = kmDiff;
+    }
+
+    window.onload = function() {
+        document.getElementById('km_start').addEventListener('input', calculatekmdiff);
+        document.getElementById('km_end').addEventListener('input', calculatekmdiff);
+        
+            document.getElementById('kmdiff').value = "";
+        
+    };
+</script>
+
 <body>
-    <div class="contheader">
-        <h1>Fahrtenbuch - Project </h1>
-    </div>
+    
     <div class="container">
-        <form action="antwort.php" method="post">
+        <div class="contheader">
+            <h1>Fahrtenbuch - Project </h1>
+        </div>
+        <form action="index.php" method="post">
     
             <!--<h3>Personal Information</h3> -->
         <fieldset>
@@ -19,63 +40,54 @@
 
             <table class="info-section">
                 <tr>
-                    <td><label for="name"> Name</label></td>
-                    <td><input type="text" name="name" id="name" size="35" required></td>
+                    <td ><label for="name"> Name</label></td>
+                    <td colspan="2"><input type="text" name="name" id="name" size="35" required></td>
+                   
                 </tr>
                 <tr>
                     <td><label for="wohnort">Wohnort</label></td>
-                    <td><input type="text" name="wohnort" id="wohnort" size="35" required></td>
+                    <td colspan="2"><input type="text" name="wohnort" id="wohnort" size=35" required></td>
                 </tr>
                 <tr>
                     <td><label for="zweck">Zweck </label></td>
-                    <td><input type="text" name="zweck" id="zweck" size="35" placeholder="Enter purpose" required></td>
+                    <td colspan="2"><input type="text" name="zweck" id="zweck" size="35" placeholder="Enter purpose" required></td>
                 </tr>
-            
-            </table>
-
-            <div class="row">
-            <table class="two-section">
+ 
                 <tr>
                     <td><label for="datum">Datum </label></td>
-                    <td><input type="date" name="datum" id="datum" size="35" required></td>
+                    <td ><input type="date" name="datum" id="datum"  required></td>
+                    
+                  
+                    <td><label for="km_start">Km Start</label></td>
+                    <td><input type="number" name="km_start" id="km_start"></td>
                 </tr>
                 <tr>
-                    <td> <label for="uhrzeit-von">Uhrzeit von</label></td>
-                    <td> <input type="time" name="uhrzeit-von" id="uhrzeit-von"></td>
+                  
+                    <td> <label for="uhrzeit_von">Uhrzeit von</label></td>
+                    <td> <input type="time" name="uhrzeit_von" id="uhrzeit_von"></td>
+                   
+                    <td><label for="km_end">Km End</label></td>
+                    <td> <input type="number" name="km_end" id="km_end"></td>
+                    
                 </tr>
-                <tr>
-                    <td> <label for="uhrzeit-bis">Uhrzeit bis</label></td>
-                    <td><input type="time" name="uhrzeit-bis" id="uhrzeit-bis"> </td>
-                </tr>
-            </table>
-        
-            
-                    <table class="two-section">
-                        <tr>
-                            <td><label for="km-start">Km Start</label></td>
-                            <td><input type="number" name="km-start" id="km-start"></td>
+                  <tr>                          
+                            <td> <label for="uhrzeit_bis">Uhrzeit bis</label></td>
+                            <td><input type="time" name="uhrzeit_bis" id="uhrzeit_bis"> </td>
                             
-                        </tr>
-                        <tr>
-                            <td><label for="km-end">Km End</label></td>
-                            <td> <input type="number" name="km-end" id="km-end"></td>
-                            
-                        </tr>
-                        <tr>
                             <td><label for="kmdiff">Km Diff</label></td>
-                            <td><input type="text" name="kmdiff" id="kmdiff" size="35" readonly></td>
+                            <td><input type="text" name="kmdiff" id="kmdiff" readonly></td>
                         </tr>
                     </table>
             
-                </div>     
-            
-
-                <div class="btn-submit">
-                    <button type="submit"> Abgeben</button>
-                </div>
-                <div class="btn-reset">
-                    <button type="reset"> reset</button>
-                </div>
+                    <div class="btn-reset">
+                        <button type="reset"> Zurücksetzen</button>
+                    </div>
+    
+                    <div class="btn-submit">
+                        <button type="submit"> Abgeben</button>
+                    </div>
+               
+               
             </fieldset>
         </form>
     </div>
