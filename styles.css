@@ -59,14 +59,6 @@ button{
     border-radius: 5px;
 }
 
-
-.one-section{
-    width: 48%;
-    margin-left:auto ;
-    margin-right: auto;
-    border-collapse: middle;
-}
-
 .info-section td{
     padding: 10px;
     vertical-align: middle;
