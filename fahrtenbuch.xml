@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="fahrtenbuch.xsl"?>
+<fahrtenbuch>
+  <entry>
+    <name>0</name>
+    <wohnort>0</wohnort>
+    <Zweck>0</Zweck>
+    <Datum>0</Datum>
+    <Uhrzeit_von>0</Uhrzeit_von>
+    <Uhrzeit_bis>0</Uhrzeit_bis>
+    <Kmstart>0</Kmstart>
+    <Kmend>0</Kmend>
+    <Kmdiff>0</Kmdiff>
+  </entry>
+<entry><name>sgdh</name><wohnort>hbfghf</wohnort><Zweck>vjngfj</Zweck><Datum>2024-12-02</Datum><Uhrzeit_von>16:35</Uhrzeit_von><Uhrzeit_bis>19:35</Uhrzeit_bis><Kmstart/><Kmend/><Kmdiff>0</Kmdiff></entry><entry><name>sgdh</name><wohnort>hbfghf</wohnort><Zweck>vjngfj</Zweck><Datum>2024-12-02</Datum><Uhrzeit_von>16:35</Uhrzeit_von><Uhrzeit_bis>19:35</Uhrzeit_bis><Kmstart/><Kmend/><Kmdiff>0</Kmdiff></entry><entry><name>sgdh</name><wohnort>hbfghf</wohnort><Zweck>vjngfj</Zweck><Datum>2024-12-02</Datum><Uhrzeit_von>16:35</Uhrzeit_von><Uhrzeit_bis>19:35</Uhrzeit_bis><Kmstart/><Kmend/><Kmdiff>0</Kmdiff></entry><entry><name>sgdh</name><wohnort>hbfghf</wohnort><Zweck>vjngfj</Zweck><Datum>2024-12-02</Datum><Uhrzeit_von>16:35</Uhrzeit_von><Uhrzeit_bis>19:35</Uhrzeit_bis><Kmstart/><Kmend/><Kmdiff>0</Kmdiff></entry></fahrtenbuch>
